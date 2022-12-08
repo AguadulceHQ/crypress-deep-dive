@@ -10,5 +10,17 @@ describe("Homepage is displaying core elements", () => {
     cy.get(".hamburger-box").click();
     cy.contains("Contact Us").click();
     cy.url().should("include", "/#contact-us");
+    cy.contains("info@aguadulcehq.com");
+    /* ==== Generated with Cypress Studio ==== */
+    cy.get('.videoask-embed__hide_button_wrapper--Qosbq').click();
+    /* ==== End Cypress Studio ==== */
+  });
+
+  /* ==== Test Created with Cypress Studio ==== */
+  it('Visits homepage and can book a meeting through Videoask', function() {
+    /* ==== Generated with Cypress Studio ==== */
+    cy.visit('https://aguadulcehq.com');
+    cy.get('.videoask-embed__label_wrapper--DXf\\+h').click();
+    /* ==== End Cypress Studio ==== */
   });
 });
